@@ -79,8 +79,11 @@ function Auth(){
 
             <div className='grid grid-cols-1 sm:grid-cols-2 gap-8'>
                 
-               <Feature icon={}/>
-
+               <Feature icon={"🎁"} title="100 Free Credits" des="Start with 100 free credits to create exam notes, project notes, charts, and graphs without any upfront cost." />
+               <Feature icon={"📚"} title="Exam Notes" des="High-yield exam notes for effective revision." />
+               <Feature icon={"📝"} title="Project Notes" des="Generate comprehensive project notes with ease." />
+               <Feature icon={"📊"} title="Charts & Graphs" des="Create visually appealing charts and graphs for your notes." />
+               <Feature icon={"💾"} title="Download PDFs" des="Download your notes in clean PDF format for offline access." />
             </div>
                 
 
@@ -109,10 +112,7 @@ function Feature({icon , title , des}){
        text-white'
        style={{ transformStyle : 'preserve-3d'}}
        >
-        <div className='absolute inset-0 rounded-2xl
-        bg-gradient-to-br from-white/10 to-transparent
-        opacity-0 hover:opacity-100 transition-opacity
-        pointer-events-none '>
+        
          <div className='relative z-10' style={{ transform : "translateZ(30px)"}}>
               <div className='text-4xl mb-3'>
                  {icon}
@@ -121,7 +121,7 @@ function Feature({icon , title , des}){
               <p className='text-gray-300 text-sm leading-relaxed'>{des}</p>
 
          </div>
-        </div>
+        
        
 
        </motion.div>
